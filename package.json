@@ -3,18 +3,38 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "formik": "^2.0.4",
+    "jest-styled-components": "^6.3.4",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "styled-components": "^4.4.1",
+    "yup": "^0.27.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "CI=true react-scripts test --colors",
+    "test:update": "yarn test -u",
+    "test:coverage": "yarn test --coverage",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.{js,jsx}",
+      "!<rootDir>/src/stories/*.{js,jsx}",
+      "!<rootDir>/src/styles/*.{js,jsx}",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/src/routes.js",
+      "!<rootDir>/src/index.js",
+      "!<rootDir>/src/serviceWorker.js"
+    ]
   },
   "browserslist": {
     "production": [
@@ -27,5 +47,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.2.6",
+    "@storybook/addon-links": "^5.2.6",
+    "@storybook/addons": "^5.2.6",
+    "@storybook/react": "^5.2.6",
+    "@testing-library/react": "^9.3.2"
   }
 }

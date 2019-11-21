@@ -34,7 +34,7 @@ export default function PersonalInfo({ history, handleCurrent }) {
           <Field name="phone" label="Phone Number" placeholder="Enter your phone number" component={InputField} />
           <Field name="email" label="Email Address" type="email" placeholder="Enter your email" component={InputField} />
           <Field name="linkedin" label="Linkedin Profile" placeholder="Enter a link to your linkedin profile" component={InputField} />
-          <Field name="salary" label="What's your expected salary?" placeholder="Enter your minmum salary" component={InputField} />
+          <Field name="salary" label="What's your minimum salary?" placeholder="Enter your minmum salary" component={InputField} />
 
           <FlexWrapper justifyContent="flex-end" alignItems="center" marginTop={10}>
             <Button buttonType="ghost" onClick={handleBack} mr={20}>Back</Button>

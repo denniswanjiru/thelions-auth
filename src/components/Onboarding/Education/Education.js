@@ -2,11 +2,6 @@ import React from 'react'
 import Button from '../../../core/Button';
 
 export default function Education({ history, handleCurrent }) {
-  const handleNext = () => {
-    handleCurrent(+1);
-    history.push("/onboarding/experience");
-  }
-
   const handleBack = () => {
     handleCurrent(-1);
     history.push("/onboarding/experience");

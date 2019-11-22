@@ -1,11 +1,11 @@
 import React from 'react'
 import { Formik, Field } from 'formik';
 
-import Button from 'core/Button';
-import InputField from 'core/InputField';
-import StyledForm from 'styled/StyledForm';
-import FlexWrapper from 'styled/FlexWrapper';
-import { PersonalInfoSchema } from 'utils/formSchemas';
+import Button from '../../../core/Button';
+import InputField from '../../../core/InputField';
+import StyledForm from '../../../styled/StyledForm';
+import FlexWrapper from '../../../styled/FlexWrapper';
+import { PersonalInfoSchema } from '../../../utils/formSchemas';
 
 export default function PersonalInfo({ history, handleCurrent }) {
   const initialValues = {

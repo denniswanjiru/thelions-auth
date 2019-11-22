@@ -2,13 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import Resume from './Resume';
-import Button from 'core/Button';
 import Education from './Education';
 import Experience from './Experience';
-import { Container } from 'core/Layout';
 import StyledOnboarding from './styles';
-import Steps, { Step } from 'core/Steps';
 import PersonalInfo from './PersonalInfo';
+import { Container } from '../../core/Layout';
+import Steps, { Step } from '../../core/Steps';
 
 export default function Onboarding({ history }) {
   const [current, setCurrent] = useState(1);

@@ -1,13 +1,13 @@
 import React from 'react';
 import { Formik, Field } from 'formik';
 
-import Button from 'core/Button';
-import InputField from 'core/InputField';
-import StyledLink from 'styled/StyledLink';
-import StyledForm from 'styled/StyledForm';
-import { H3, Text } from 'core/Typoghraphy';
-import FlexWrapper from 'styled/FlexWrapper';
-import { LoginSchema } from 'utils/formSchemas';
+import Button from '../../../core/Button';
+import InputField from '../../../core/InputField';
+import StyledLink from '../../../styled/StyledLink';
+import StyledForm from '../../../styled/StyledForm';
+import { H3, Text } from '../../../core/Typoghraphy';
+import FlexWrapper from '../../../styled/FlexWrapper';
+import { LoginSchema } from '../../../utils/formSchemas';
 
 export default function Login({history}) {
   const initialValues = {};

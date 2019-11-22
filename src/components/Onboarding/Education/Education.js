@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from 'core/Button';
+import Button from '../../../core/Button';
 
 export default function Education({ history, handleCurrent }) {
   const handleNext = () => {
